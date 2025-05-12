@@ -5,6 +5,7 @@ chrome.storage.local.get("visits", ({ visits }) => {
       return;
     }
   
+    
     const sorted = Object.entries(visits).sort((a, b) => b[1] - a[1]);
   
     for (const [site, count] of sorted) {
