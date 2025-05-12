@@ -11,6 +11,8 @@ chrome.storage.local.get("visits", ({ visits }) => {
       const li = document.createElement("li");
       li.textContent = `${site}: ${count} kez`;
       list.appendChild(li);
+
+      
     }
   });
   
